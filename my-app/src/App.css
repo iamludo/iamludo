@@ -1,3 +1,38 @@
+body {
+  background: #ECEBE9;
+}
+
+.rotating-menu {
+  width: 100%;
+  display: flex;
+}
+
+.rotating-menu > div {
+  min-width: 33.3%;
+    position: relative;
+}
+
+.rotating-menu > div > img {
+  width: 100%;
+
+}
+
+.rotating-menu > div > div {
+  width: 100%;
+  padding: 50% 0;
+}
+
+.rotating-menu > div:first-child {
+  left: 33.3%;
+  transform: rotate(60deg);
+}
+
+.rotating-menu > div:last-child {
+    right: 33.3%;
+      transform: rotate(-60deg);
+}
+
+
 .App {
   text-align: center;
 }
