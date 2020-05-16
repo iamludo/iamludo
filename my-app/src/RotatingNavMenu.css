@@ -1,0 +1,81 @@
+.rotating-menu {
+ max-width: 100%;
+ display: flex;
+
+}
+
+.rotating-menu > div > * {
+ width: 100%;
+}
+
+.rotating-menu > div {
+ min-width: 33.3%;
+   position: relative;
+}
+
+.rotating-menu > div > div {
+ padding: 50% 0;
+}
+
+.rotating-menu > div:first-child {
+ left: 33.3%;
+ transform: rotate(-60deg);
+}
+
+.rotating-menu > div:last-child {
+   right: 33.3%;
+     transform: rotate(60deg);
+}
+
+
+.rotating-menu, .rotating-menu img{
+ cursor: pointer;
+   -webkit-transition: -webkit-transform .8s ease-in-out;
+ -ms-transition: -ms-transform .8s ease-in-out;
+ transition: transform .8s ease-in-out;
+
+}
+
+.cw0degrees {
+ transform:rotate(0deg);
+ -ms-transform:rotate(0deg);
+ -webkit-transform:rotate(0deg);
+}
+
+.cw0degrees > div:first-child > img:first-child, .cw0degrees > div:first-child > img:last-child {
+  transform:rotate(60deg);
+  -ms-transform:rotate(60deg);
+  -webkit-transform:rotate(60deg);
+}
+
+.cw0degrees > div::nth-child(2) > img:first-child, .cw0degrees > div::nth-child(2) > img:last-child {
+  transform:rotate(0deg);
+  -ms-transform:rotate(0deg);
+  -webkit-transform:rotate(0deg);
+}
+
+.cw0degrees > div:last-child > img:first-child, .cw0degrees > div:last-child > img:last-child {
+  transform:rotate(-60deg);
+  -ms-transform:rotate(-60deg);
+  -webkit-transform:rotate(-60deg);
+}
+
+.cw60degrees {
+ transform:rotate(60deg);
+ -ms-transform:rotate(60deg);
+ -webkit-transform:rotate(60deg);
+}
+
+
+
+.cw120degrees {
+ transform:rotate(120deg);
+ -ms-transform:rotate(120deg);
+ -webkit-transform:rotate(120deg);
+}
+
+.cw180degrees {
+ transform:rotate(120deg);
+ -ms-transform:rotate(120deg);
+ -webkit-transform:rotate(120deg);
+}
