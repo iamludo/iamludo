@@ -1,5 +1,4 @@
 import React from 'react';
-import Icons from './icons.js';
 import RotatingNavMenu from './components/RotatingNavMenu.js';
 import NavBar from './components/navbar.js';
 import './App.css';

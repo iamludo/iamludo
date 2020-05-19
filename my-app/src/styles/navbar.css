@@ -29,8 +29,10 @@
 }
 
 .nav-bar .dropdown {
-  display: block;
+  display: none;
   position: absolute;
+  left: 0;
+  right: 0;
   width: 100vw;
   background-color: var(--primary-bg);
   color: var(--primary-blue);
