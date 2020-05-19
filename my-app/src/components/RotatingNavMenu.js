@@ -1,6 +1,6 @@
 import React from 'react';
 import Icons from './icons.js';
-import './RotatingNavMenu.css';
+import '../styles/RotatingNavMenu.css';
 
  class RotatingNavMenu extends React.Component {
    state = {

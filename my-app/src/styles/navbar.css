@@ -1,0 +1,38 @@
+.nav-bar {
+  background-color: var(--primary-blue);
+  width: 100vw;
+  height: 80px;
+  /*position: fixed;*/
+  box-sizing: border-box;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+
+}
+.nav-bar > * {
+  box-sizing: border-box;
+}
+
+.logo, .logo img, .burger-menu img{
+  margin: 0;
+  padding: 0;
+  height: 60px;
+  padding-top: 3px;
+}
+
+.burger-menu.closed > img:last-child {
+  display: none
+}
+
+.burger-menu.opened > img:first-child {
+  display: none
+}
+
+.nav-bar .dropdown {
+  display: block;
+  position: absolute;
+  width: 100vw;
+  background-color: var(--primary-bg);
+  color: var(--primary-blue);
+
+}

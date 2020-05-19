@@ -1,6 +1,8 @@
 .rotating-menu {
  max-width: 100%;
  display: flex;
+    background: url(../img/logo-bg.svg) center center;
+    background-size: auto;
 
 }
 
