@@ -18,20 +18,25 @@ class Navbar extends React.Component {
     render() {
 
     return (
-      <div className="nav-bar">
-        <div className="logo">< Icons iconName = "logo" /></div>
-        <div onClick = {this.handleClick}  className={!this.state.toggle ? "burger-menu closed" :  "burger-menu opened"}>< Icons iconName = "burger" />< Icons iconName = "close" /></div>
-        <div className="dropdown">
-          <ul>
-            <li>Home page</li>
-            <li>About Ludo</li>
-            <li>Portfolio</li>
-            <li>Skillset</li>
-            <li>Beehive game</li>
-            <li>Contact</li>
-          </ul>
+
+      <nav class="uk-navbar-container" uk-navbar>
+          <div class="uk-navbar-left">
+            <a className="logo" href="">< Icons iconName = "logo" /></a>
+        </div>
+        <div class="uk-navbar-right">
+          <a className="burger-menu" href="">< Icons iconName = "burger" /></a>
+          <div uk-dropdown="mode: click">
+            <ul class="uk-nav uk-dropdown-nav">
+            <li><a href="/home">Home page</a></li>
+            <li><a href="/about">About Ludo</a></li>
+            <li><a href="/portfolio">Portfolio</a></li>
+            <li><a href="/skills">Skillset</a></li>
+            <li><a href="/beehive">Beehive game</a></li>
+            <li><a href="/contact">Contact</a></li>
+            </ul>
         </div>
       </div>
+    </nav>
 
     )
   }

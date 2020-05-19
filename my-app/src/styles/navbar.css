@@ -1,40 +1,37 @@
-.nav-bar {
-  background-color: var(--primary-blue);
-  width: 100vw;
-  height: 80px;
-  /*position: fixed;*/
-  box-sizing: border-box;
-  padding: 5px;
-  display: flex;
-  justify-content: space-between;
+  /* This file contains all the styles for the navigation bar */
 
-}
-.nav-bar > * {
-  box-sizing: border-box;
+
+.uk-navbar-container {
+  /* position: fixed*/
 }
 
-.logo, .logo img, .burger-menu img{
-  margin: 0;
-  padding: 0;
-  height: 60px;
-  padding-top: 3px;
+.uk-navbar-container {
+    background-color: var(--primary-blue) !important;
+    color: var(--primary-cream);
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    padding: 0 10px;
+    height: 60px;
 }
 
-.burger-menu.closed > img:last-child {
-  display: none
+.uk-navbar-container .logo,
+.uk-navbar-container .burger-menu {
+display: block;
+  height: 82%;
+  margin: 9%;
 }
 
-.burger-menu.opened > img:first-child {
-  display: none
+.uk-navbar-container .logo img,
+.uk-navbar-container .burger-menu img {
+height: 100%;
 }
 
-.nav-bar .dropdown {
-  display: none;
-  position: absolute;
-  left: 0;
-  right: 0;
-  width: 100vw;
-  background-color: var(--primary-bg);
-  color: var(--primary-blue);
+.uk-navbar-container .burger-menu.uk-open {
+  background: url(../img/icon-close.svg) center center;
+  background-size: 80% center center;
+}
 
+.uk-navbar-container .burger-menu.uk-open img {
+  visibility: hidden;
 }
