@@ -1,0 +1,16 @@
+section.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+section.home::after, section.home::before {
+  display: none;
+}
+
+section.home > h1 {
+      font-size: 1.5rem;
+      font-weight: 300;
+      padding-top: 20px;
+}

@@ -1,10 +1,16 @@
-import ReactReact from 'react';
+import React from 'react';
+import RotatingNavMenu from './RotatingNavMenu.js';
+import '../styles/home.css';
 
 const Home = () => {
   return (
-    <h1>Home<h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  )
+    <section className="home uk-container uk-animation-fade">
+      <h1>Hi, <span className="txt-colour-red">I am &#123;</span><span className="txt-colour-blue txt-heavy">LUDO</span><span className="txt-colour-red">&#125;</span>.com</h1>
+          <RotatingNavMenu />
+        <p className="footer" >www.iamludo.com - {new Date().getFullYear()} &copy;</p>
+    </section>
+
+     )
 }
 
 export default Home;

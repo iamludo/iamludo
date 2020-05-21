@@ -1,9 +1,9 @@
 :root {
   --primary-cream: #ECEBE9;
   --primary-blue: #2D323B;
-  --primary-cyan: #2D323B;
-  --secondary-green: #2D323B;
-  --secondary-red: #2D323B;
+  --primary-cyan: #A9B1C2;
+  --secondary-green: #42758C;
+  --secondary-red: #E84359;
 }
 
 @import "https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400;1,700&display=swap"; /* Importing google fonts */
@@ -21,17 +21,44 @@ body, html {
 body {
   margin: 0;
   font-family: 'Karla', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-
-  sans-serif;
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--primary-cream);
   color: var(--primary-blue);
+}
 
+h1, h2, h3, h4, h5, h6, p > a, .txt-colour-green {
+  color: var(--secondary-green);
+}
 
+.txt-colour-blue {
+ color: var(--primary-blue);
+}
+
+.txt-colour-cyan, .footer {
+  color: var(--primary-cyan);
+}
+
+.txt-colour-red, .alert{
+    color: var(--secondary-red);
+}
+
+.txt-heavy {
+  font-weight: 800;
 }
 
 a {
   cursor: pointer;
+}
+
+section.uk-container {
+  padding-top: 60px;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.footer {
+  font-weight: 100;
+  font-size: 0.9em;
 }

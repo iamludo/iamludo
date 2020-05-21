@@ -1,45 +1,30 @@
 import React from 'react';
+import { Link, NavLink} from 'react-router-dom';
 import Icons from './icons.js';
 import '../styles/navbar.css';
 
+const Navbar = () => {
 
-class Navbar extends React.Component {
-    state = {
-      toggle: false
-    }
-
-    handleClick = (e) => {
-      this.setState(prevState => ({
-        toggle: !prevState.toggle
-      }));
-
-      }
-
-    render() {
-
-    return (
-
-      <nav class="uk-navbar-container" uk-navbar>
-          <div class="uk-navbar-left">
-            <a className="logo" href="">< Icons iconName = "logo" /></a>
+  return (
+      <nav className="uk-navbar-container ">
+        <div className="uk-navbar-left">
+          <Link to="/" className="logo" href="/">< Icons iconName = "logo" /></Link>
         </div>
-        <div class="uk-navbar-right">
+        <div className="uk-navbar-right">
           <a className="burger-menu" href="">< Icons iconName = "burger" /></a>
-          <div uk-dropdown="mode: click">
-            <ul class="uk-nav uk-dropdown-nav">
-            <li><a href="/home">Home page</a></li>
-            <li><a href="/about">About Ludo</a></li>
-            <li><a href="/portfolio">Portfolio</a></li>
-            <li><a href="/skills">Skillset</a></li>
-            <li><a href="/beehive">Beehive game</a></li>
-            <li><a href="/contact">Contact</a></li>
-            </ul>
+          <div id="drop-mobile-style" uk-dropdown="pos: bottom-right; mode: click">
+              <ul className="uk-nav uk-dropdown-nav">
+                <li><NavLink exact to="/">Home page</NavLink></li>
+                <li><NavLink to="/about">About Ludo</NavLink></li>
+                <li><NavLink to="/portfolio">Portfolio</NavLink></li>
+                <li><NavLink to="/skills">Skillset</NavLink></li>
+                <li><NavLink to="/beehive">Beehive game</NavLink></li>
+                <li><NavLink to="/contact">Contact</NavLink></li>
+              </ul>
+          </div>
         </div>
-      </div>
-    </nav>
-
+      </nav>
     )
-  }
 }
 
 export default Navbar;

@@ -1,39 +1,70 @@
+.rotating-menu-container, .rotating-menu, .rotating-menu>div>* {
+  width: 100%;
+  max-width: 500px;
+
+  /* Disable default browser highlighting */
+  -webkit-tap-highlight-color:transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+
+}
+
 .rotating-menu {
- max-width: 100%;
- display: flex;
-    background: url(../img/logo-bg.svg) center center;
-    background-size: auto;
-
+  display: flex;
+  background: url(../img/logo-bg.svg) center center no-repeat;
+  background-size: auto;
 }
 
-.rotating-menu > div > * {
- width: 100%;
+.rotating-menu>div {
+  min-width: 33.3%;
+  position: relative;
 }
 
-.rotating-menu > div {
- min-width: 33.3%;
-   position: relative;
+.rotating-menu>div>div:nth-child(2) {
+  padding: 50% 0;
 }
 
-.rotating-menu > div > div {
- padding: 50% 0;
+.rotating-menu>div:first-child {
+  left: 33.3%;
+  transform: rotate(-60deg);
 }
 
-.rotating-menu > div:first-child {
- left: 33.3%;
- transform: rotate(-60deg);
+.rotating-menu>div:last-child {
+  right: 33.3%;
+  transform: rotate(60deg);
 }
 
-.rotating-menu > div:last-child {
-   right: 33.3%;
-     transform: rotate(60deg);
+.rotating-menu, .rotating-menu img {
+  cursor: pointer;
+  -webkit-transition: -webkit-transform .8s ease-in-out;
+  -ms-transition: -ms-transform .8s ease-in-out;
+  transition: transform .8s ease-in-out;
+}
+
+.rotating-menu>div:last-child>div:nth-child(2) {
+  background: url(../img/icon-rotate.svg) center center no-repeat;
+  background-size: 30%;
+}
+
+/* mouse, touch pad */
+@media (hover: hover) and (pointer: fine) {
+  .rotating-menu>div:last-child>div:nth-child(2) {
+    background: none;
+  }
+
+  .rotating-menu>div:last-child>div:nth-child(2):hover {
+    background: url(../img/icon-rotate.svg) center center no-repeat;
+    background-size: 50%;
+  }
 }
 
 
-.rotating-menu, .rotating-menu img{
- cursor: pointer;
-   -webkit-transition: -webkit-transform .8s ease-in-out;
- -ms-transition: -ms-transform .8s ease-in-out;
- transition: transform .8s ease-in-out;
-
+.go-to-btn {
+  width: 100%;
+  height: 60px;
 }
