@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link, NavLink} from 'react-router-dom';
 import Icons from './icons.js';
 import '../styles/RotatingNavMenu.css';
 
@@ -6,6 +7,7 @@ import '../styles/RotatingNavMenu.css';
    state = {
      position: 0,
      page: ["home", "about", "portfolio", "skills", "beehive", "contact"],
+     label: ["home", "Learn more about me", "See my portfolio", "Check my skillset", "Play beehive", "Get in contact"],
      direction: 1
    }
 
@@ -26,7 +28,8 @@ import '../styles/RotatingNavMenu.css';
    createRotationButton = () => {
      let direction = this.state.direction;
      let rotationButton = (
-       <div className={(direction  === -1) ? ("clock-wise") : ("anticlock-wise")}
+       <div className={(direction  === 1) ? ("clockwise") : ("anticlockwise")}
+       style = {this.rotateStyle(300 - (60 * this.state.position) )}
        onClick={() => this.handleClick( this.state.position + direction )}></div >
      );
      return rotationButton;
@@ -55,10 +58,6 @@ import '../styles/RotatingNavMenu.css';
 
 
   render() {
-    const button = (this.state.position === 0) ?
-    (<p>Tap icon to start</p>) :
-    (<p>Go to the {this.state.page[(this.state.position)]} page</p>);
-
     return (
       <div className="rotating-menu-container">
         <div className="rotating-menu" style = {this.rotateStyle(60 * this.state.position)}>
@@ -66,10 +65,10 @@ import '../styles/RotatingNavMenu.css';
             <div>{this.createRotatingIcon(3)}<div></div >{this.createRotatingIcon(0)}</div >
             <div>{this.createRotatingIcon(2)} {this.createRotationButton()} {this.createRotatingIcon(5)}</div >
         </div>
-        <div className="go-to-btn">{button}</div>
-        {"dir:" + this.state.direction + " pos:" + this.state.position }
-      </div>
-    )
+        <div className="go-to-btn">{(this.state.position === 0) ?
+        (<p>Tap icon to start</p>) :
+        (  <Link to={"/"+this.state.page[(this.state.position)]} className="uk-button uk-button-default uk-button-small" href="#">{this.state.label[(this.state.position)]}</Link>)}</div>
+      </div>)
   }
 }
 

@@ -3,6 +3,7 @@ section.home {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  text-align: center;
 }
 
 section.home::after, section.home::before {

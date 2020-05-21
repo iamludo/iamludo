@@ -1,6 +1,6 @@
 .rotating-menu-container, .rotating-menu, .rotating-menu>div>* {
   width: 100%;
-  max-width: 500px;
+  max-width: 480px;
 
   /* Disable default browser highlighting */
   -webkit-tap-highlight-color:transparent;
@@ -46,19 +46,29 @@
   transition: transform .8s ease-in-out;
 }
 
-.rotating-menu>div:last-child>div:nth-child(2) {
-  background: url(../img/icon-rotate.svg) center center no-repeat;
+.rotating-menu div.clockwise {
+  background: url(../img/icon-rotate-clockwise.svg) center center no-repeat;
+  background-size: 30%;
+}
+
+.rotating-menu div.anticlockwise {
+  background: url(../img/icon-rotate-anticlockwise.svg) center center no-repeat;
   background-size: 30%;
 }
 
 /* mouse, touch pad */
 @media (hover: hover) and (pointer: fine) {
-  .rotating-menu>div:last-child>div:nth-child(2) {
+  .rotating-menu div.clockwise, .rotating-menu div.anticlockwise {
     background: none;
   }
 
-  .rotating-menu>div:last-child>div:nth-child(2):hover {
-    background: url(../img/icon-rotate.svg) center center no-repeat;
+  .rotating-menu>div:last-child>div.clockwise:hover {
+    background: url(../img/icon-rotate-clockwise.svg) center center no-repeat;
+    background-size: 50%;
+  }
+
+  .rotating-menu div.anticlockwise:hover {
+    background: url(../img/icon-rotate-anticlockwise.svg) center center no-repeat;
     background-size: 50%;
   }
 }
@@ -67,4 +77,23 @@
 .go-to-btn {
   width: 100%;
   height: 60px;
+  position: relative;
+  z-index: 9999;
 }
+
+.go-to-btn > .uk-button {
+  background-color: var(--primary-blue);
+  color: var(--primary-cyan);
+}
+
+@media (min-width:320px) { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ }
+@media (min-width:480px) { /* smartphones, Android phones, landscape iPhone */ }
+@media (min-width:600px) { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ }
+@media (min-width:801px) { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+@media (min-width:1025px) {
+/* big landscape tablets, laptops, and desktops */
+  .rotating-menu-container, .rotating-menu {
+    max-width: 340px;
+  }
+}
+@media (min-width:1281px) { /* hi-res laptops and desktops */ }

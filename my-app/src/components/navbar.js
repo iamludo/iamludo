@@ -12,7 +12,7 @@ const Navbar = () => {
         </div>
         <div className="uk-navbar-right">
           <a className="burger-menu" href="">< Icons iconName = "burger" /></a>
-          <div id="drop-mobile-style" uk-dropdown="pos: bottom-right; mode: click">
+          <div id="drop-mobile-style" uk-dropdown="pos: bottom-right; mode: hover">
               <ul className="uk-nav uk-dropdown-nav">
                 <li><NavLink exact to="/">Home page</NavLink></li>
                 <li><NavLink to="/about">About Ludo</NavLink></li>
