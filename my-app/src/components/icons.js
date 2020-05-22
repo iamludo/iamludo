@@ -12,14 +12,29 @@ const icons = [{
     description: 'About page icon'
   },
   {
+    src: require('../img/icon-about-active.svg'),
+    title: 'about-active',
+    description: 'About page icon'
+  },
+  {
     src: require('../img/icon-portfolio.svg'),
     title: 'portfolio',
     description: 'Portfolio page icon'
   },
   {
-  src: require('../img/icon-home.svg'),
+    src: require('../img/icon-portfolio-active.svg'),
+    title: 'portfolio-active',
+    description: 'Portfolio page icon'
+  },
+  {
+  src: require('../img/icon-skills.svg'),
   title: 'skills',
   description: 'Skills page icon'
+},
+{
+src: require('../img/icon-skills-active.svg'),
+title: 'skills-active',
+description: 'Skills page icon'
 },
 {
   src: require('../img/icon-beehive.svg'),
@@ -27,8 +42,18 @@ const icons = [{
   description: 'Beehive page icon',
 },
 {
-  src: require('../img/icon-home.svg'),
+  src: require('../img/icon-beehive-active.svg'),
+  title: 'beehive-active',
+  description: 'Beehive page icon',
+},
+{
+  src: require('../img/icon-contact.svg'),
   title: 'contact',
+  description: 'Contact page icon'
+},
+{
+  src: require('../img/icon-contact-active.svg'),
+  title: 'contact-active',
   description: 'Contact page icon'
 },
 {

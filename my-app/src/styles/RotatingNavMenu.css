@@ -1,6 +1,6 @@
-.rotating-menu-container, .rotating-menu, .rotating-menu>div>* {
+.rotating-menu-container, .rotating-menu, .rotating-menu>div * {
   width: 100%;
-  max-width: 480px;
+  max-width: 340px;
 
   /* Disable default browser highlighting */
   -webkit-tap-highlight-color:transparent;
@@ -14,10 +14,14 @@
 
 }
 
+.rotating-menu-container {
+  background: url(../img/logo-bg.svg) top center no-repeat;
+  background-size: 100% auto;
+
+}
+
 .rotating-menu {
   display: flex;
-  background: url(../img/logo-bg.svg) center center no-repeat;
-  background-size: auto;
 }
 
 .rotating-menu>div {
@@ -39,7 +43,11 @@
   transform: rotate(60deg);
 }
 
-.rotating-menu, .rotating-menu img {
+.rotating-menu a {
+  display: block;
+}
+
+.rotating-menu, .rotating-menu * {
   cursor: pointer;
   -webkit-transition: -webkit-transform .8s ease-in-out;
   -ms-transition: -ms-transform .8s ease-in-out;
@@ -81,19 +89,19 @@
   z-index: 9999;
 }
 
+.go-to-btn p span {
+  color: var(--primary-cyan);
+}
+
 .go-to-btn > .uk-button {
   background-color: var(--primary-blue);
   color: var(--primary-cyan);
+  min-width: 180px;
 }
 
 @media (min-width:320px) { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ }
 @media (min-width:480px) { /* smartphones, Android phones, landscape iPhone */ }
 @media (min-width:600px) { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ }
 @media (min-width:801px) { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
-@media (min-width:1025px) {
-/* big landscape tablets, laptops, and desktops */
-  .rotating-menu-container, .rotating-menu {
-    max-width: 340px;
-  }
-}
+@media (min-width:1025px) {/* big landscape tablets, laptops, and desktops */}
 @media (min-width:1281px) { /* hi-res laptops and desktops */ }

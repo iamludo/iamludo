@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, NavLink} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Icons from './icons.js';
 import '../styles/RotatingNavMenu.css';
 
@@ -7,19 +7,33 @@ import '../styles/RotatingNavMenu.css';
    state = {
      position: 0,
      page: ["home", "about", "portfolio", "skills", "beehive", "contact"],
-     label: ["home", "Learn more about me", "See my portfolio", "Check my skillset", "Play beehive", "Get in contact"],
+     label: ["home", "About Ludo", "My portfolio", "My skillset", "Play beehive", "Get in contact"],
      direction: 1
    }
 
    createRotatingIcon = (iconNumber) => {
+     let icon = {
+       rotationCostant: 0,
+       linkToPage: "",
+       iconName: this.state.page[iconNumber],
+     }
      let rotationCostant;
-     if (iconNumber === 0 || iconNumber === 3) { rotationCostant = 0}
-     else if (iconNumber === 1 || iconNumber === 4) { rotationCostant = 60}
-     else { rotationCostant = 300}
+
+     if (iconNumber === 0 || iconNumber === 3) { icon.rotationCostant = 0}
+     else if (iconNumber === 1 || iconNumber === 4) { icon.rotationCostant = 60}
+     else { icon.rotationCostant = 300}
+
+     if (iconNumber === this.state.position && iconNumber !== 0) {
+       icon.iconName += "-active";
+       icon.linkToPage = "/"+this.state.page[(this.state.position)];
+     } else { icon.linkToPage = "" }
+
      let rotatingIcon = (
        <div onClick={() => this.handleClick(iconNumber)}>
-       < Icons iconName = {this.state.page[iconNumber]}
-       iconStyle = {this.rotateStyle(rotationCostant - (60 * this.state.position))} />
+         <Link to={icon.linkToPage}>
+           < Icons iconName = {icon.iconName}
+           iconStyle = {this.rotateStyle(icon.rotationCostant - (60 * this.state.position))} />
+         </Link>
        </div >
      );
      return rotatingIcon;
@@ -66,8 +80,11 @@ import '../styles/RotatingNavMenu.css';
             <div>{this.createRotatingIcon(2)} {this.createRotationButton()} {this.createRotatingIcon(5)}</div >
         </div>
         <div className="go-to-btn">{(this.state.position === 0) ?
-        (<p>Tap icon to start</p>) :
-        (  <Link to={"/"+this.state.page[(this.state.position)]} className="uk-button uk-button-default uk-button-small" href="#">{this.state.label[(this.state.position)]}</Link>)}</div>
+        (<p><span uk-icon="triangle-right"></span>Tap icon to start<span uk-icon="triangle-left"></span></p>) :
+        (  <Link to={"/"+this.state.page[(this.state.position)]} className="uk-button uk-button-default uk-button-small uk-animation-scale-up uk-transform-origin-top-center">
+        <span uk-icon="triangle-right"></span>{this.state.label[(this.state.position)]}<span uk-icon="triangle-left"></span>
+        </Link>)}
+        </div>
       </div>)
   }
 }
