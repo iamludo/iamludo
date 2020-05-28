@@ -1,0 +1,65 @@
+[
+  {
+      "id": 1,
+      "yearStart": 2017,
+      "yearEnd": 2020,
+      "description": "FRONT END DEVELOPER, GRAPHIC DESIGNER & CREATIVE PROCESS MANAGER @ Adapt Worldwide (Formally known as Traffic Optimiser) - London (UK)",
+      "icons": [ "frontend","responsive","html5","css3","js6","node","react","uikit","github","xd","illustrator","photoshop"]
+  },
+  {
+      "id": 2,
+      "yearStart": 2014,
+      "yearEnd": 2017,
+      "description": "FRONT END DEVELOPER & GRAPHIC DESIGNER @ Ttraffic Optimiser - London (UK)",
+      "icons": [ "html5","css3","canvas","javascript","bootstrap","wordpress","svg","infographic","animation","illustrator","photoshop","animate"]
+  },
+  {
+      "id": 3,
+      "yearStart": 2013,
+      "yearEnd": 2014,
+      "description": "WEB & GRAPHIC DESIGNER (freelance) @ Self Employed + Lenus Creative Agency, London (UK)",
+      "icons": [ "frontend","html5","css3","photoshop","photo","banners"]
+  },
+  {
+      "id": 4,
+      "yearStart": 2012,
+      "yearEnd": 2013,
+      "description": "MAIL & LANDING PAGES DESIGNER & DEVELOPER @ Wild Media Ltd , London (UK)",
+      "icons": [ "html","css","wordpress","magento","photoshop","mailchimp","analytics"]
+  },
+  {
+      "id": 5,
+      "yearStart": 2011,
+      "yearEnd": 2011,
+      "description": "WEB DESIGNER & DEVELOPER @ Asidev S.r.l. Web & Hosting Solutions, Florence (IT)",
+      "icons": [ "frontend","html5","css3","javascript","php","git"]
+  },
+  {
+      "id": 6,
+      "yearStart": 2010,
+      "yearEnd": 2010,
+      "description": "GRAPHIC & INTERACTIVE DESIGNER (internship) @ “I.T.I.S.” Public Engineers, Salamanca (ES)",
+      "icons": [ "design","animation","flash","illustrator"]
+  },
+  {
+      "id": 7,
+      "yearStart": 2007,
+      "yearEnd": 2010,
+      "description": "COMMERCIAL BRANDING & GRAPHIC DESIGN @ University of design, arts and crafts” of Salamanca (ES)",
+      "icons": [ "design","print","art","photo","palette","photoshop","illustrator","indesign","dreamweaver","aftereffects","flash"]
+  },
+  {
+      "id": 8,
+      "yearStart": 2004,
+      "yearEnd": 2007,
+      "description": "COMPUTER SCIENCE AND THEORY OF SYSTEMS @ University of Siena (IT)",
+      "icons": [ "coding","java","c++","sql"]
+  },
+  {
+      "id": 9,
+      "yearStart": 1999,
+      "yearEnd": 2004,
+      "description": "DIPLOMA OF COMPUTER PROGRAMMING @ Texhnical high school I.T.C. Rocalli Siena (IT)",
+      "icons": [ "coding","visualbasic","access","html","flash","dreamweaver"]
+  }
+]

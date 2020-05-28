@@ -1,0 +1,130 @@
+.SortingPanel {
+  background: var(--primary-cream) url(../img/dot.svg) top center repeat-y;
+  background-size: 9px;
+  margin: 0;
+  padding: 20px 0;
+}
+
+.AboutIcon {
+  width: 80px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.SortingPanel li {
+  margin: 0;
+  padding: 0;
+}
+
+.SortingPanel li a {
+  min-width: 100px;
+  text-align: center;
+}
+
+.SortingPanel li:first-child {
+  margin-right: 15px;
+}
+
+.SortingPanel li:last-child {
+  margin-left: 15px;
+}
+
+.experience-grid .item {
+  margin: 15px 0 50px 0;
+}
+
+.experience-grid .item>* {
+  padding: 0 15px;
+  padding: 0;
+}
+
+.experience-grid .item .title::before {
+  content: "";
+  display: block;
+  height: 25px;
+  width: 100%;
+  background-image: url("../img/date-pin.svg");
+  background-position: top center;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  ;
+  position: relative;
+  bottom: 27px;
+}
+
+.experience-grid .item .knoledge:before {
+  display: none;
+  ;
+}
+
+.experience-grid .item>* {
+  margin: 10px 0 0 0;
+}
+
+.experience-grid .item .year {
+  font-weight: 600;
+  font-size: 25px;
+  padding-bottom: 15px;
+  background: var(--primary-cream) url(../img/dot.svg) center bottom repeat-x;
+  background-size: 9px;
+}
+
+.experience-grid .knoledge img {
+box-sizing: border-box;
+  margin: 0 2.5px;
+  width: 15%;
+}
+
+@media (min-width:600px) {
+  .experience-grid {
+    background: url(../img/dot.svg) center bottom repeat-y;
+    background-size: 9px;
+  }
+
+  .experience-grid .item>* {
+    margin: 35px 0 0 0;
+  }
+
+  .experience-grid .item hr {
+    display: none;
+  }
+
+  .experience-grid .item .year {
+    position: absolute;
+    width: 50%;
+    margin: 0 25%;
+  }
+
+  .experience-grid .item .title,
+  .experience-grid .item .knoledge {
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+
+  .experience-grid .item .title h5,
+  .experience-grid .item .knoledge img {
+    margin-top: 10px;
+  }
+
+  .experience-grid .item .knoledge:before {
+    content: "";
+    display: block;
+    height: 25px;
+    width: 100%;
+    background-image: url("../img/date-pin.svg");
+    background-position: top center;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    ;
+    position: relative;
+  }
+
+  .experience-grid .item .knoledge:before,
+  .experience-grid .item .title::before {
+    bottom: 0px;
+  }
+
+  .experience-grid .knoledge img {
+    width: 10%;
+  }
+}

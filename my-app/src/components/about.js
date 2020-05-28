@@ -1,18 +1,24 @@
 import React from 'react';
+import TimeLine from './TimeLine.js';
+import '../styles/about.css';
 
 const About = () => {
   return (
-    <div>
-      <h1>About page </h1>
-      < p > Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam,
-      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat.Duis aute irure dolor in reprehenderit in voluptate velit esse
-      cillum dolore eu fugiat nulla pariatur.Excepteur sint occaecat cupidatat non
-      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    <section className="uk-container uk-animation-fade">
+      <ul className="uk-breadcrumb uk-flex-center"><li><span>home</span></li><li><span>about</span></li></ul>
+      <h1>About me</h1>
+      <p> With a decade of experience helping marketing teams from brands like
+      Groupon, UPS, and Funding Circle achieve their goals, Ludovico D’Aietti
+      <strong className="txt-colour-green"> brings art to the science of programming</strong>.
+      An experienced partner to developers and creative teams, Ludo has proven
+      experience helping creative agencies adapt to fast changing consumer demand
+      and the world of web development.
       </p>
-    </div>
 
+      <TimeLine />
+
+      <p className="footer txt-centered" >www.iamludo.com - {new Date().getFullYear()} &copy;</p>
+    </section>
      )
 }
 

@@ -8,10 +8,10 @@ const Navbar = () => {
   return (
       <nav className="uk-navbar-container ">
         <div className="uk-navbar-left">
-          <Link to="/" className="logo" href="/">< Icons iconName = "logo" /></Link>
+          <Link to="/" className="logo">< Icons iconName = "logo" /></Link>
         </div>
         <div className="uk-navbar-right">
-          <a className="burger-menu" href="">< Icons iconName = "burger" /></a>
+          <a className="burger-menu">< Icons iconName = "burger" /></a>
           <div id="drop-mobile-style" uk-dropdown="pos: bottom-right; mode: hover">
               <ul className="uk-nav uk-dropdown-nav">
                 <li><NavLink exact to="/">Home page</NavLink></li>

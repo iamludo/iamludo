@@ -30,6 +30,7 @@ body {
 
 h1, h2, h3, h4, h5, h6, p > a, .txt-colour-green {
   color: var(--secondary-green);
+  font-weight: 300;
 }
 
 .txt-colour-blue {
@@ -44,6 +45,10 @@ h1, h2, h3, h4, h5, h6, p > a, .txt-colour-green {
     color: var(--secondary-red);
 }
 
+.txt-centered {
+  text-align: center;
+}
+
 .txt-heavy {
   font-weight: 800;
 }
@@ -52,6 +57,13 @@ a {
   cursor: pointer;
 }
 
+ul {
+  list-style: none;
+}
+
+.uk-subnav-pill > .uk-active > a {
+    background-color: var(--primary-blue) !important;
+}
 
 @media (min-width:320px) { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ }
 @media (min-width:480px) { /* smartphones, Android phones, landscape iPhone */ }

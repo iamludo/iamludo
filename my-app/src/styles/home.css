@@ -10,10 +10,18 @@ section.home::after, section.home::before {
   display: none;
 }
 
-section.home > h1 {
+section.home > div > h1 {
       font-size: 1.5rem;
       font-weight: 300;
       padding-top: 20px;
       margin-bottom: 0;
       padding-bottom: 0;
+}
+
+section.home > div > p {
+  margin: 5px 0 0 0;
+  padding:0;
+
+}section.home > div > p > b {
+  font-weight: 900;
 }
