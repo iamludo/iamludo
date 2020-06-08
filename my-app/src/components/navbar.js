@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, NavLink} from 'react-router-dom';
-import Icons from './icons.js';
+import Icon from './icons.js';
 import '../styles/navbar.css';
 
 const Navbar = () => {
@@ -8,10 +8,10 @@ const Navbar = () => {
   return (
       <nav className="uk-navbar-container ">
         <div className="uk-navbar-left">
-          <Link to="/" className="logo">< Icons iconName = "logo" /></Link>
+          <Link to="/" className="logo">< Icon iconName = "logo" /></Link>
         </div>
         <div className="uk-navbar-right">
-          <a className="burger-menu">< Icons iconName = "burger" /></a>
+          <a className="burger-menu">< Icon iconName = "burger" /></a>
           <div id="drop-mobile-style" uk-dropdown="pos: bottom-right; mode: hover">
               <ul className="uk-nav uk-dropdown-nav">
                 <li><NavLink exact to="/">Home page</NavLink></li>

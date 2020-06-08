@@ -6,8 +6,11 @@ const Home = () => {
   return (
     <section className="home uk-container uk-animation-fade">
     <div>
-      <h1>Hi, <span className="txt-colour-red">I am &#123;</span><span className="txt-colour-blue txt-heavy">LUDO</span><span className="txt-colour-red">&#125;</span>.com</h1>
-      <p className="txt-colour-cyan">front-end<b> · </b>developer<b> · </b>designer</p>
+
+      <h1 className="txt-colour-green">Hi, <span className="txt-colour-blue">I·AM·LUDO</span>.com</h1>
+      <p className="txt-colour-cyan">
+      <span className="txt-colour-red">&#123; </span>front-end<b> · </b>developer<b> · </b>designer<span className="txt-colour-red"> &#125;</span>
+      </p>
 
       </div>
           <RotatingNavMenu />

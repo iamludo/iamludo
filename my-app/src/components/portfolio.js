@@ -1,17 +1,22 @@
 import React from 'react';
+import ProjectsGrid from './ProjectsGrid.js';
+import '../styles/portfolio.css';
 
 const Portfolio = () => {
   return (
-    <div>
+    <section className="uk-container uk-animation-fade">
+      <ul className="uk-breadcrumb uk-flex-center"><li><span>home</span></li><li><span>Portfolio</span></li></ul>
       <h1>Portfolio</h1>
-      < p > Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      <p>  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam,
       quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat.Duis aute irure dolor in reprehenderit in voluptate velit esse
-      cillum dolore eu fugiat nulla pariatur.Excepteur sint occaecat cupidatat non
-      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      consequat.
       </p>
-    </div>
+
+      <ProjectsGrid />
+
+      <p className="footer txt-centered" >www.iamludo.com - {new Date().getFullYear()} &copy;</p>
+    </section>
 
      )
 }

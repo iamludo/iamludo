@@ -1,0 +1,51 @@
+.projects-menu {
+
+
+}
+
+.projects-menu > .uk-subnav > li > div {
+  padding-left: 30px;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-size: auto 66%;
+  background-position-x: 5px;
+  background-position-y: center;
+}
+
+.projects-menu .uk-subnav li.uk-active div {
+  background-color: var(--primary-cyan);
+  color: var(--primary-blue);
+  font-weight: 600;
+}
+
+.projects-menu > .uk-subnav > li > div.all {
+  background-image: url('../img/project_category_all.svg');
+}
+
+.projects-menu > .uk-subnav > li > div.frontend {
+  background-image: url('../img/project_category_frontend.svg');
+}
+
+.projects-menu > .uk-subnav > li > div.uxui {
+  background-image: url('../img/project_category_uxui.svg');
+}
+
+.projects-menu > .uk-subnav > li > div.design {
+  background-image: url('../img/project_category_design.svg');
+}
+
+.projects-menu > .uk-subnav > li > div.illustrations {
+  background-image: url('../img/project_category_illustrations.svg');
+}
+
+.projects-menu > .uk-subnav > li > div.infographics {
+  background-image: url('../img/project_category_infographic.svg');
+}
+
+.projects-menu > .uk-subnav > li > div.iconography {
+  background-image: url('../img/project_category_iconography.svg');
+}
+
+.projects-menu > .uk-subnav > li > div.photoediting {
+  background-image: url('../img/project_category_photoediting.svg');
+}

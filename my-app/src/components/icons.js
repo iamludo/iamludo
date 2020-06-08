@@ -86,6 +86,54 @@ description: 'Skills page icon'
   description: 'Close menu icon'
 },
 {
+  id: 15,
+  src: require('../img/project_category_all.svg'),
+  title: 'project-all',
+  description: 'All Progects'
+},
+{
+  id: 16,
+  src: require('../img/project_category_design.svg'),
+  title: 'project-design',
+  description: 'Graphic & Web Design'
+},
+{
+  id: 17,
+  src: require('../img/project_category_frontend.svg'),
+  title: 'project-frontend',
+  description: 'Fron-tend Development'
+},
+{
+  id: 18,
+  src: require('../img/project_category_iconography.svg'),
+  title: 'project-iconography',
+  description: 'Icon & Icons Set Design'
+},
+{
+  id: 19,
+  src: require('../img/project_category_illustrations.svg'),
+  title: 'project-illustrations',
+  description: 'Digital Illustrations'
+},
+{
+  id: 19,
+  src: require('../img/project_category_infographic.svg'),
+  title: 'project-infographic',
+  description: 'Satic or Interactive Infographic'
+},
+{
+  id: 20,
+  src: require('../img/project_category_photoediting.svg'),
+  title: 'project-photoediting',
+  description: 'Photo Editing & Manipulation'
+},
+{
+  id: 21,
+  src: require('../img/project_category_uxui.svg'),
+  title: 'project-uxui',
+  description: 'UI/UX Design & Prototyping'
+},
+{
   id: 115,
   src: require('../img/icokt_html.svg'),
   title: 'html',
@@ -370,15 +418,29 @@ description: 'Photography and Photo editing'
 ];
 
 
-const Icons = ({iconName, iconStyle, iconClass, iconKey}) => {
+export const Icon = ({
+  iconName, iconStyle, iconClass, iconKey }) => {
 
   for (let j = 0; j <= icons.length; j++) {
     if (icons[j].title === iconName) {
-      return <img className={iconClass} style={iconStyle} src = {icons[j].src} alt={icons[j].description} key= {(icons[j].id + iconKey).toString()}/>;
+      return <img className = {iconClass}
+                  style = {iconStyle}
+                  src = {icons[j].src}
+                  alt = {icons[j].description}
+                  key = {(icons[j].id + iconKey).toString()}
+              />;
     }
+  }
+};
+
+
+export const Icons = ({icons, listKey, listPrefix}) => {
+    return icons.map( (icon,j) => < Icon
+    iconName={listPrefix + icons[j]}
+    iconKey = {listKey + "-list-" + j.toString()}
+    key={listKey + "-list-" + j.toString()}/>);
   }
 
 
-};
 
-export default Icons
+export default Icon;

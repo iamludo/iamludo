@@ -1,16 +1,11 @@
 import React from 'react';
-import Icons from './icons.js';
+import { Icon, Icons } from './icons.js';
 import data from '../data/TimeLineData.json';
 import '../styles/TimeLine.css';
 
 
 
 const TimeLineItems = () => {
-
-  function timeLineItemIcons(icons, id){
-      return icons.map( (icon,j) => < Icons iconName={icons[j]} key = {"time-line-item-" + id.toString() + "-icon-" + j.toString()}/>);
-    }
-
 
   let timeLineItems = data.map( (item) =>
     <div key={"time-line-item-" + item.id.toString()} data-year-start={item.yearStart} data-year-end={item.yearEnd}  className="item uk-grid uk-child-width-expand@s uk-text-center">
@@ -20,7 +15,7 @@ const TimeLineItems = () => {
         <hr/>
       </div>
       <div className="knoledge title uk-flex-right@s uk-flex-center">
-      {timeLineItemIcons(item.icons,item.id)}
+      <Icons listPrefix={""}  icons={item.icons} listKey={"timeline-" + item.id.toString()}/>
       </div>
     </div>
   )
@@ -31,7 +26,7 @@ const TimeLineItems = () => {
 const TimeLine = () => {
   return (
     <div className="txt-centered" uk-filter="target: .js-filter">
-      < Icons iconClass="AboutIcon"iconName = "about-active" />
+      < Icon iconClass="AboutIcon"iconName = "about-active" />
       <ul className="SortingPanel uk-subnav uk-subnav-pill uk-flex-center">
         <li className="uk-active" uk-filter-control="sort: data-year-end; order: desc"><a>Descending</a></li>
         <li  uk-filter-control="sort: data-year-start; order: asc"><a>Ascending</a></li>

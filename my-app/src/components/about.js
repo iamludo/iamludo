@@ -1,6 +1,5 @@
 import React from 'react';
 import TimeLine from './TimeLine.js';
-import '../styles/about.css';
 
 const About = () => {
   return (

@@ -1,10 +1,11 @@
 :root {
   --primary-cream: #ECEBE9;
   --primary-blue: #2D323B;
-  --primary-cyan: #A9B1C2;
+  --primary-cyan: #C9CDD5;
+  --secondary-cyan: #A9B1C2;
   --secondary-green: #42758C;
   --secondary-red: #E84359;
-}
+  }
 
 @import "https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400;1,700&display=swap"; /* Importing google fonts */
 
@@ -38,7 +39,7 @@ h1, h2, h3, h4, h5, h6, p > a, .txt-colour-green {
 }
 
 .txt-colour-cyan, .footer {
-  color: var(--primary-cyan);
+  color: var(--secondary-cyan);
 }
 
 .txt-colour-red, .alert{
@@ -63,6 +64,17 @@ ul {
 
 .uk-subnav-pill > .uk-active > a {
     background-color: var(--primary-blue) !important;
+}
+
+.button-navy-primary {
+background-color: var(--primary-blue);
+color: var(--primary-cream);
+}
+
+.button-navy-primary:hover {
+border-color: var(--primary-blue);
+background-color: var(--primary-cyan);
+color: var(--primary-blue);
 }
 
 @media (min-width:320px) { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ }

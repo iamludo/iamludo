@@ -1,0 +1,51 @@
+.project .uk-card-header,
+.project .uk-card-body,
+.project .uk-card-footer {
+    padding: 8px 30px;
+}
+
+.project .uk-card-body > h4 {
+  margin-top: 8px;
+
+}
+
+.project .uk-card-body .project-thumb {
+    width: 100%;
+  background: url(../img/logo_bg.svg) center center no-repeat;
+  background-size: cover;
+}
+
+.project .uk-card-body img {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px;
+}
+
+.project .uk-card-header .year {
+  height: 100%;
+}
+
+.project .uk-card-header .year > p {
+  margin-bottom: 0;
+  line-height: 135%;
+  font-size: 1.2em
+}
+
+.project .uk-card-header .category img {
+  height: 25px;
+  width: 25px;
+}
+
+.project .uk-card-footer p {
+  margin: 0 0 10px 0;
+}
+
+.project .uk-card-footer p.description {
+      line-height: 1.2;
+      font-size: 0.9rem;
+}
+
+.project .uk-card-footer > a {
+  margin: 10px 0;
+}

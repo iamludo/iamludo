@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Icons from './icons.js';
+import { Icon, Icons } from './icons.js';
 import '../styles/RotatingNavMenu.css';
 
  class RotatingNavMenu extends React.Component {
@@ -17,7 +17,6 @@ import '../styles/RotatingNavMenu.css';
        linkToPage: "",
        iconName: this.state.page[iconNumber],
      }
-     let rotationCostant;
 
      if (iconNumber === 0 || iconNumber === 3) { icon.rotationCostant = 0}
      else if (iconNumber === 1 || iconNumber === 4) { icon.rotationCostant = 60}
@@ -31,7 +30,7 @@ import '../styles/RotatingNavMenu.css';
      let rotatingIcon = (
        <div onClick={() => this.handleClick(iconNumber)}>
          <Link to={icon.linkToPage}>
-           < Icons iconName = {icon.iconName}
+           < Icon iconName = {icon.iconName}
            iconStyle = {this.rotateStyle(icon.rotationCostant - (60 * this.state.position))} />
          </Link>
        </div >
@@ -74,14 +73,14 @@ import '../styles/RotatingNavMenu.css';
   render() {
     return (
       <div className="rotating-menu-container">
-        <div className="rotating-menu" style = {this.rotateStyle(60 * this.state.position)}>
+        <div className="rotating-menu uk-animation-fade-10" style = {this.rotateStyle(60 * this.state.position)}>
             <div>{this.createRotatingIcon(4)}<div></div >{this.createRotatingIcon(1)}</div >
             <div>{this.createRotatingIcon(3)}<div></div >{this.createRotatingIcon(0)}</div >
             <div>{this.createRotatingIcon(2)} {this.createRotationButton()} {this.createRotatingIcon(5)}</div >
         </div>
         <div className="go-to-btn">{(this.state.position === 0) ?
         (<p><span uk-icon="triangle-right"></span>Tap icon to start<span uk-icon="triangle-left"></span></p>) :
-        (  <Link to={"/"+this.state.page[(this.state.position)]} className="uk-button uk-button-default uk-button-small uk-animation-scale-up uk-transform-origin-top-center">
+        (  <Link to={"/"+this.state.page[(this.state.position)]} className="uk-button button-navy-primary uk-button-small uk-animation-scale-up uk-transform-origin-top-center">
         <span uk-icon="triangle-right"></span>{this.state.label[(this.state.position)]}<span uk-icon="triangle-left"></span>
         </Link>)}
         </div>
