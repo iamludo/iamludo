@@ -1,0 +1,21 @@
+<svg id="b6ea4ff4-4561-4602-9bbe-1ce5d00be46d" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <title>icokt</title>
+  <path d="M77.58,86.86,95.76,55a10.48,10.48,0,0,0-.06-10.49L77.23,12.9a10.48,10.48,0,0,0-9.11-5.2l-36.64.17a10.48,10.48,0,0,0-9.06,5.29L4.24,45a10.48,10.48,0,0,0,0,10.49L22.75,87.1a10.48,10.48,0,0,0,9.11,5.2l36.64-.17A10.47,10.47,0,0,0,77.58,86.86Z" style="fill: #8e73bb"/>
+  <g>
+    <rect x="38.69" y="42.9" width="26.94" height="20.99" rx="1.61" style="fill: none;stroke: #fff;stroke-linecap: round;stroke-miterlimit: 10;stroke-width: 2px"/>
+    <path d="M38.69,62.28l8.12-10.09A2.14,2.14,0,0,1,49,52.3l2.13,2.47a1.41,1.41,0,0,0,2.44-.58l2.58-6c1-.74,1.41-.74,2.45,0l7,7.28" style="fill: none;stroke: #fff;stroke-linecap: round;stroke-miterlimit: 10;stroke-width: 2px"/>
+  </g>
+  <line x1="33.64" y1="59.77" x2="33.64" y2="77.8" style="fill: none;stroke: #fff;stroke-linecap: round;stroke-miterlimit: 10;stroke-width: 2px"/>
+  <line x1="42.65" y1="68.78" x2="24.62" y2="68.78" style="fill: none;stroke: #fff;stroke-linecap: round;stroke-miterlimit: 10;stroke-width: 2px"/>
+  <line x1="70.88" y1="29.22" x2="70.88" y2="47.25" style="fill: none;stroke: #fff;stroke-linecap: round;stroke-miterlimit: 10;stroke-width: 2px"/>
+  <line x1="79.89" y1="38.24" x2="61.86" y2="38.24" style="fill: none;stroke: #fff;stroke-linecap: round;stroke-miterlimit: 10;stroke-width: 2px"/>
+  <g id="bf77bc56-9407-455c-b770-771f9da1cfb0" data-name="baICRm.tif">
+    <path d="M72.28,58.43l-.27.33-.83.83a.42.42,0,0,1-.75-.18c-.39-1.19-.79-2.38-1.18-3.57-.23-.67-.45-1.34-.68-2a.42.42,0,0,1,.28-.58.49.49,0,0,1,.24,0l2.45.81,2.91,1,.31.1a.41.41,0,0,1,.15.71l-1,1c-.08.08-.07.12,0,.2l2.57,2.58a1,1,0,0,1,.15,1.37,1.05,1.05,0,0,1-1.56.14l-1.45-1.44Z" style="fill: #fff"/>
+  </g>
+  <line x1="36.07" y1="21.06" x2="55.02" y2="21.06" style="fill: none;stroke: #fff;stroke-linecap: round;stroke-miterlimit: 10;stroke-width: 2px"/>
+  <circle cx="37.07" cy="21.06" r="2.2" style="fill: #fff"/>
+  <line x1="36.07" y1="27.06" x2="55.02" y2="27.06" style="fill: none;stroke: #fff;stroke-linecap: round;stroke-miterlimit: 10;stroke-width: 2px"/>
+  <circle cx="43.88" cy="27.06" r="2.2" style="fill: #fff"/>
+  <line x1="36.07" y1="33.44" x2="55.02" y2="33.44" style="fill: none;stroke: #fff;stroke-linecap: round;stroke-miterlimit: 10;stroke-width: 2px"/>
+  <circle cx="50.57" cy="33.44" r="2.2" style="fill: #fff"/>
+</svg>

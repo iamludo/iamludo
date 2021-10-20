@@ -9,11 +9,13 @@ const Projects = () => {
   <li data-category={project.category.toString().replace(/,/g, " ")} key={"project-" + project.id.toString()} >
     <ProjectCard
       id={project.id}
+      name={project.name}
       year={project.year}
       title={project.title}
       client={project.client}
       blurb={project.blurb}
-      category={project.category}/>
+      category={project.category}
+      url={project.url}/>
   </li>
   )
   return projects
@@ -27,16 +29,17 @@ const ProjectsGrid = () => {
       <ul className="uk-subnav uk-subnav-pill uk-child-width-1-2 uk-child-width-1-4@m">
           <li className="uk-active" uk-filter-control=""><div className="all">All</div></li>
           <li uk-filter-control="[data-category*='frontend']"><div className="frontend">Front-end</div></li>
-          <li uk-filter-control="[data-category*='uxui']"><div className="uxui">UI/UX Prototyping</div></li>
+          <li uk-filter-control="[data-category*='uxui']"><div className="uxui">Prototyping</div></li>
           <li uk-filter-control="[data-category*='design']"><div className="design">Graphic Design</div></li>
           <li uk-filter-control="[data-category*='illustrations']"><div className="illustrations">Illustrations</div></li>
-          <li uk-filter-control="[data-category*='infographics']"><div className="infographics">Infographics</div></li>
+          <li uk-filter-control="[data-category*='infographic']"><div className="infographics">Infographics</div></li>
           <li uk-filter-control="[data-category*='iconography']"><div className="iconography">Iconography</div></li>
           <li uk-filter-control="[data-category*='photoediting']"><div className="photoediting">Photo Editing</div></li>
       </ul>
       </div>
 
-    <ul className="uk-grid uk-grid-match uk-grid-small js-filter uk-child-width-1-1 uk-child-width-1-3@m uk-child-width-1-4@l uk-text-center" uk-grid="">
+    <ul className="uk-grid uk-grid-match uk-grid-small js-filter uk-child-width-1-1 uk-child-width-1-3@m uk-child-width-1-4@l uk-text-center"
+        uk-scrollspy="target: li; cls: uk-animation-fade; delay: 300" uk-grid="">
       <Projects />
     </ul>
 

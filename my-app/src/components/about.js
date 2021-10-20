@@ -1,11 +1,13 @@
 import React from 'react';
 import TimeLine from './TimeLine.js';
+import BreadCrumbs from './BreadCrumbs.js';
+
 
 const About = () => {
   return (
     <section className="uk-container uk-animation-fade">
-      <ul className="uk-breadcrumb uk-flex-center"><li><span>home</span></li><li><span>about</span></li></ul>
-      <h1>About me</h1>
+      <BreadCrumbs PageName="About" />
+      <h1>I can tell you a bit about me</h1>
       <p> With a decade of experience helping marketing teams from brands like
       Groupon, UPS, and Funding Circle achieve their goals, Ludovico D’Aietti
       <strong className="txt-colour-green"> brings art to the science of programming</strong>.
@@ -15,9 +17,7 @@ const About = () => {
       </p>
 
       <TimeLine />
-
-      <p className="footer txt-centered" >www.iamludo.com - {new Date().getFullYear()} &copy;</p>
-    </section>
+      </section>
      )
 }
 

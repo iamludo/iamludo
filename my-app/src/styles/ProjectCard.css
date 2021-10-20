@@ -1,25 +1,27 @@
 .project .uk-card-header,
 .project .uk-card-body,
 .project .uk-card-footer {
-    padding: 8px 30px;
+    padding: 8px;
 }
 
 .project .uk-card-body > h4 {
-  margin-top: 8px;
-
+    margin-top: 8px;
+    min-height: 55px;
 }
 
 .project .uk-card-body .project-thumb {
+    display: block;
     width: 100%;
   background: url(../img/logo_bg.svg) center center no-repeat;
   background-size: cover;
+
 }
 
-.project .uk-card-body img {
+.project .uk-card-body .project-thumb img {
   display: block;
   box-sizing: border-box;
   width: 100%;
-  padding: 10px;
+  padding: 7px;
 }
 
 .project .uk-card-header .year {
@@ -47,5 +49,5 @@
 }
 
 .project .uk-card-footer > a {
-  margin: 10px 0;
+  margin: 10px 5px;
 }

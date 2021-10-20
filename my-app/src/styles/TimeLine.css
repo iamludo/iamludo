@@ -64,7 +64,7 @@
 .experience-grid .item .year {
   font-weight: 600;
   font-size: 25px;
-  padding-bottom: 15px;
+  padding-bottom: 13px;
   background: var(--primary-cream) url(../img/dot.svg) center bottom repeat-x;
   background-size: 9px;
 }
@@ -79,6 +79,7 @@ box-sizing: border-box;
   .experience-grid {
     background: url(../img/dot.svg) center bottom repeat-y;
     background-size: 9px;
+    padding-bottom: 13px;
   }
 
   .experience-grid .item>* {

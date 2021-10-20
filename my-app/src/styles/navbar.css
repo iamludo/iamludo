@@ -22,8 +22,10 @@
   .uk-navbar-container .logo img,
   .uk-navbar-container .burger-menu img {
     height: 100%;
+    /*
     transition: opacity 0.5s ease-out;
     -webkit-transition: opacity 0.5s ease-out;
+    */
     opacity: 1;
   }
 

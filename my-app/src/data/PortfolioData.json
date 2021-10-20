@@ -1,22 +1,148 @@
 [
   {
       "id": 1,
-      "path": "thomaspossamai",
-      "title": "Thomas Possamai Portfolio",
-      "url": "http://www.thomaspossamai.com",
-      "client": "Thomas Possamai Photographer",
+      "name": "adaptworldwide",
+      "title": "Adapt Worldwide Company Website",
+      "url": "http://www.adaptworldwide.com",
+      "client": "Adapt Worldwide (Welocalize)",
       "year": 2020,
-      "blurb": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euisio dignissim qui.",
-      "category": [ "frontend","uxui"]
+      "blurb": "Creation of a new company website for Adapt Worldwide, the client main requirment was a minimal design focused on the content and information delivery, expressed request for use of customised icons over images.",
+      "category": [ "frontend","uxui","iconography","design"],
+      "dev": [ "wordpress","html5","css3","svg"],
+      "des": [ "xd","illustrator"]
   },
   {
       "id": 2,
-      "path": "bumface",
-      "title": "Bumface Group Website",
-      "url": "http://www.thomaspossamai.com",
-      "client": "Bumface Master Inc.",
+      "name": "ukwokecities",
+      "title": "UK's most Woke Cities",
+      "url": "https://www.bankrate.com/uk/mortgages/woke-index/",
+      "client": "Bankrate",
+      "year": 2019,
+      "blurb": "This was a one page Implementation to the Bankrate website in React, consisting in the design and development of a landing page containing an interactive table of UK most progressive locations to live, I partook to all aspect of the project including prototyping the page and the design of an small customised icon set. ",
+      "category": [ "frontend","iconography","design"],
+      "dev": [ "react","js6","html5","css3"],
+      "des": [ "xd","illustrator"]
+  },
+  {
+      "id": 3,
+      "name": "rockpopfashion",
+      "title": "Rock & Pop Fashion Hall of Fame",
+      "url": "http://rock-pop-fashion-hall-fame.iamludo.com/EN/",
+      "client": "Groupon",
+      "year": 2016,
+      "blurb": "This was a digital marketing content peace for Groupon which involved an interactve gallery of illustrated outfits that music Artists have worn trough History, my role on this project covered all aspect of it includng illustrations and development.",
+      "category": [ "frontend","illustrations","design"],
+      "dev": [ "javascript","js6","html5","css3"],
+      "des": [ "illustrator"]
+  },
+  {
+      "id": 4,
+      "name": "juiceticeleague",
+      "title": "The Juice-Tice League",
+      "url": "http://juicetice-league.iamludo.com/",
+      "client": "Plenish",
+      "year": 2016,
+      "blurb": "This extremelly silly but extremelly efficent marketing tool was a collaboration between the agency I worked for and European illustrator and contemporary artist Fulvio Obregon. The scope of the project was to increase the SEO visibility of the newly at the time Plenish, using the popular DC comic superheroes as subjects, due to the fact the the Justice League movie was upon realease.",
+      "category": [ "frontend","design"],
+      "dev": [ "bootstrap","html5","css3"],
+      "des": [ "illustrator","photoshop"]
+  },
+  {
+      "id": 5,
+      "name": "historyofcards",
+      "title": "The History of playing Cards",
+      "url": "https://www.vegasslotsonline.com/cards-history/",
+      "client": "Vegas Slots",
       "year": 2018,
-      "blurb": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euisio dignissim qui.",
-      "category": [ "design","uxui"]
-  }
+      "blurb": "This a simple static infographic created for online betting giant VegasSlot, the Infographic is an illustrated timeline of the history of playing cards, I fully worked on this project using Adobe Illustrator with different digital illustrator tecniques.",
+      "category": [ "infographic","illustrations","design"],
+      "dev": [ "na"],
+      "des": [ "illustrator","palette","art"]
+  },
+  {
+      "id": 6,
+      "name": "thomaspossamai",
+      "title": "Thomas Passamai Photography",
+      "url": "http://thomaspossamai.iamludo.com/",
+      "client": "Thomas Passamai",
+      "year": 2016,
+      "blurb": "Project creation of a one-page website portfolio, started on a basic bootstrap template as base and implemented with javascript photogalleries and other simple elements, designed to higlight the magical photography of the photographer and owner of the website Thomas Possamai.",
+      "category": [ "frontend"],
+      "dev": [ "bootstrap","html5","css3","javascript"],
+      "des": [ "photoshop"]
+  },
+  {
+      "id": 7,
+      "name": "iconicweddingdresses",
+      "title": "100 Most Iconic Wedding Dresses",
+      "url": "http://iconic-wedding-dresses.iamludo.com/",
+      "client": "Vashi Diamonds",
+      "year": 2015,
+      "blurb": "This extremelly sucessfull idea, which many online magazine have mentioned for years following the creation was a digital content revelation, due to client request this website if ully build from stractch with pure javascript and no use of libraries, including the multisearch system for filtering dresses, the simple design and the style has been created by me with the help of a fashion designer who illustrated litterally hundred wedding dresses that have been wore by royal, politicians and various celebrities.",
+      "category": [ "frontend", "design"],
+      "dev": [ "bootstrap","html5","css3","javascript"],
+      "des": [ "illustrator","photoshop","palette"]
+  },
+  {
+      "id": 8,
+      "name": "cardtournaments",
+      "title": "Biggest Cards tournaments",
+      "url": "https://www.vegasslotsonline.com/the-biggest-card-tournaments/",
+      "client": "Vegas Slot Online",
+      "year": 2018,
+      "blurb": "This colorful infographic was an acclaimed peace of digital information, created with the intention to not be overfill with illustration in order to get a clear understanding to satsfy the curiosity of whomever would be interested in the top prizes in card tournament.",
+      "category": [ "infographic","illustrations","design"],
+      "dev": [ "na"],
+      "des": [ "illustrator","palette","art"]
+  },
+  {
+      "id": 9,
+      "name": "sandhurst",
+      "title": "Sandhurst Plumbing Website",
+      "url": "https://sandhurstplumbing.co.uk/",
+      "client": "Sandhurst Plumbing & Maintenance Ltd.",
+      "year": 2019,
+      "blurb": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "category": [ "frontend","uxui","iconography","design"],
+      "dev": [ "wordpress","html5","css3"],
+      "des": [ "photoshop","illustrator"]
+  },
+  {
+      "id": 10,
+      "name": "brilliantminds",
+      "title": "100 Brilliant Business Minds",
+      "url": "https://www.fundingcircle.com/featured/brilliant-minds/",
+      "client": "Funding Circle",
+      "year": 2015,
+      "blurb": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "category": [ "frontend", "design"],
+      "dev": [ "bootstrap","html5","css3","javascript"],
+      "des": [ "illustrator","photoshop","palette"]
+  },
+  {
+      "id": 11,
+      "name": "valentinestradition",
+      "title": "Valentine's day Traditions",
+      "url": "http://valentines-day-traditions.c1.biz/",
+      "client": "Vashi Diamonds",
+      "year": 2016,
+      "blurb": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "category": [ "frontend"],
+      "dev": [ "bootstrap","html5","css3","javascript"],
+      "des": [ "na"]
+  },
+  {
+        "id": 12,
+        "name": "breakfastguide",
+        "title": "The Breakfasters' guide to London",
+        "url": "http://breakfastersguidelondon.iamludo.com/",
+        "client": "Premier Inn",
+        "year": 2017,
+        "blurb": "Project creation of a one-page website portfolio, building on a basic bootstrap template.",
+        "category": [ "frontend", "design"],
+        "dev": [ "html5","css3","javascript"],
+        "des": [ "illustrator","photoshop","palette"]
+    }
+
+
 ]

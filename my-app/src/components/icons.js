@@ -5,85 +5,85 @@ const icons = [{
   id: 1,
     src: require('../img/icon-home.svg'),
     title: 'home',
-    description: 'home page icon'
+    description: 'home'
   },
   {
     id: 2,
     src: require('../img/icon-about.svg'),
     title: 'about',
-    description: 'About page icon'
+    description: 'About me'
   },
   {
     id: 3,
     src: require('../img/icon-about-active.svg'),
     title: 'about-active',
-    description: 'About page icon'
+    description: '',
   },
   {
     id: 4,
     src: require('../img/icon-portfolio.svg'),
     title: 'portfolio',
-    description: 'Portfolio page icon'
+    description: 'Portfolio'
   },
   {
     id: 5,
     src: require('../img/icon-portfolio-active.svg'),
     title: 'portfolio-active',
-    description: 'Portfolio page icon'
+    description: '',
   },
   {
   id: 6,
   src: require('../img/icon-skills.svg'),
   title: 'skills',
-  description: 'Skills page icon'
+  description: 'Skills table'
 },
 {
 id: 7,
 src: require('../img/icon-skills-active.svg'),
 title: 'skills-active',
-description: 'Skills page icon'
+  description: '',
 },
 {
   id: 8,
   src: require('../img/icon-beehive.svg'),
   title: 'beehive',
-  description: 'Beehive page icon',
+  description: 'Beehive',
 },
 {
   id: 9,
   src: require('../img/icon-beehive-active.svg'),
   title: 'beehive-active',
-  description: 'Beehive page icon',
+  description: '',
 },
 {
   id: 10,
   src: require('../img/icon-contact.svg'),
   title: 'contact',
-  description: 'Contact page icon'
+  description: 'Contact me'
 },
 {
   id: 11,
   src: require('../img/icon-contact-active.svg'),
   title: 'contact-active',
-  description: 'Contact page icon'
+  description: '',
 },
 {
   id: 12,
   src: require('../img/icon-logo.svg'),
   title: 'logo',
-  description: 'I am Ludo logo'
+  description: 'IamLudo.com'
 },
 {
   id: 13,
   src: require('../img/icon-burger.svg'),
   title: 'burger',
-  description: 'Burger menu icon'
+  description: ''
 },
 {
   id: 14,
   src: require('../img/icon-close.svg'),
   title: 'close',
-  description: 'Close menu icon'
+  description: ''
 },
 {
   id: 15,
@@ -415,6 +415,72 @@ src: require('../img/icokt_photo.svg'),
 title: 'photo',
 description: 'Photography and Photo editing'
 },
+{
+id: 162,
+src: require('../img/icokt_uxui.svg'),
+title: 'uxui',
+description: 'UX & UI Prototyping'
+},
+{
+id: 163,
+src: require('../img/icokt_iconography.svg'),
+title: 'iconography',
+description: 'Icons set design'
+},
+{
+id: 164,
+src: require('../img/icokt_illustrations.svg'),
+title: 'illustrations',
+description: 'Illustrations design'
+},
+{
+id: 165,
+src: require('../img/icokt_photoediting.svg'),
+title: 'photoediting',
+description: 'Photo manipulation or Banner design'
+},
+{
+id: 166,
+src: require('../img/icokt_na.svg'),
+title: 'na',
+description: 'Not Applicable'
+},
+{
+id: 167,
+src: require('../img/social_twitter.svg'),
+title: 'twitter',
+description: 'Check my Twitter'
+},
+{
+id: 167,
+src: require('../img/social_linkedin.svg'),
+title: 'linkedin',
+description: 'Check my Linkedin'
+},
+{
+id: 168,
+src: require('../img/social_facebook.svg'),
+title: 'facebook',
+description: 'Check my Facebook'
+},
+{
+id: 169,
+src: require('../img/social_github.svg'),
+title: 'gitHub',
+description: 'Check my Github'
+},
+{
+id: 170,
+src: require('../img/social_behance.svg'),
+title: 'behance',
+description: 'Check my Behance'
+},
+{
+id: 171,
+src: require('../img/social_stackoverflow.svg'),
+title: 'stackoverflow',
+description: 'Check my Stackoverflow'
+}
 ];
 
 
@@ -428,6 +494,7 @@ export const Icon = ({
                   src = {icons[j].src}
                   alt = {icons[j].description}
                   key = {(icons[j].id + iconKey).toString()}
+                  uk-tooltip= {icons[j].description}
               />;
     }
   }

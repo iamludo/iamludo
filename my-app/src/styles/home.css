@@ -12,6 +12,8 @@ section.home::after, section.home::before {
   display: none;
 }
 
+
+
 section.home > div > h1 {
   font-family: 'Quicksand', sans-serif;
       font-size: 1.3rem;
@@ -35,4 +37,103 @@ section.home > div > p {
 section.home > div > p > b {
   font-weight: 900;
   font-size: 0.9rem;
+}
+
+
+
+@media (min-width:320px) { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ }
+@media (min-width:480px) { /* smartphones, Android phones, landscape iPhone */ }
+@media (min-width:600px) { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ }
+@media (min-width:801px) { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
+@media (min-width:1281px) { /* hi-res laptops and desktops */ }
+
+
+
+
+
+
+/*----------------------------TEMPORARY CSS GOES HERE: ----------------------------*/
+
+
+
+.element > div {
+  padding: 5px;
+}
+
+.element > div div p {
+  margin:0;
+  padding: 0;
+}
+
+.element .element-header p{
+  display: block;
+  text-align: center;
+}
+
+.element .element-letter > p {
+      font-size: 25vw;
+}
+
+.element .element-bar {
+  width: 100%;
+  height: 3px;
+}
+.element .element-bar el-bar {
+  display: block;
+  height: 3px;
+  width: 0;
+  -webkit-border-radius: 2px;
+-moz-border-radius: 2px;
+border-radius: 2px;
+  transition: width .8s ease-in-out;
+}
+
+.element .element-icon {
+  display: none;
+  position: absolute;
+  width: 100%;
+  top: 5px;
+  left: 0;
+}
+
+.element .element-icon  > img {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 20%;
+}
+
+/* mouse, touch pad */
+@media (hover: hover) and (pointer: fine) {
+  .element:hover .element-icon {
+    display: block;
+  }
+
+  .element:hover .element-letter {
+    visibility: hidden;
+  }
+}
+
+
+
+@media (min-width:600px) {
+/* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+  .element p {
+    font-size: 0.85rem;
+  }
+
+  .element .element-letter > p {
+        font-size: 5rem;
+        line-height: 100%;
+  }
+
+}
+
+@media (min-width:801px) {
+/* tablet, landscape iPad, lo-res laptops ands desktops */
+  .element {
+    width: 12.5%;
+  }
+
+
 }

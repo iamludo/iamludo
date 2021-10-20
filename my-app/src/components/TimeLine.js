@@ -25,15 +25,16 @@ const TimeLineItems = () => {
 
 const TimeLine = () => {
   return (
-    <div className="txt-centered" uk-filter="target: .js-filter">
+    <div  id="page-top" className="txt-centered" uk-filter="target: .js-filter">
       < Icon iconClass="AboutIcon"iconName = "about-active" />
       <ul className="SortingPanel uk-subnav uk-subnav-pill uk-flex-center">
         <li className="uk-active" uk-filter-control="sort: data-year-end; order: desc"><a>Descending</a></li>
         <li  uk-filter-control="sort: data-year-start; order: asc"><a>Ascending</a></li>
       </ul>
-      <div className="experience-grid js-filter" uk-scrollspy="cls: uk-animation-slide-left; target: .item; delay: 300; repeat: true">
+      <div className="experience-grid js-filter" uk-scrollspy="cls: uk-animation-slide-left; target: .item; delay: 300;">
         <TimeLineItems />
       </div>
+      <a class="uk-button button-navy-primary" href="#page-top" uk-scroll="">Scroll up</a>
     </div>
   )
 }

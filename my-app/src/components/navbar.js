@@ -16,9 +16,9 @@ const Navbar = () => {
               <ul className="uk-nav uk-dropdown-nav">
                 <li><NavLink exact to="/">Home page</NavLink></li>
                 <li><NavLink to="/about">About Ludo</NavLink></li>
-                <li><NavLink to="/portfolio">Portfolio</NavLink></li>
-                <li><NavLink to="/skills">Skillset</NavLink></li>
-                <li><NavLink to="/beehive">Beehive game</NavLink></li>
+                <li><NavLink exact to="/portfolio">Portfolio</NavLink></li>
+                <li><NavLink to="/skills">Skillset table</NavLink></li>
+                <li><NavLink to="/beehive">Beehive graph</NavLink></li>
                 <li><NavLink to="/contact">Contact</NavLink></li>
               </ul>
           </div>
