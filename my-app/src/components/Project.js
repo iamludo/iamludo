@@ -78,8 +78,7 @@ import '../styles/Project.css';
        <div className="project-description">
          <p> {this.state.project_description} </p>
          <p >
-          <Link exact to="/portfolio" className="uk-button button-navy-primary uk-button-small" >Check out other Projects</Link>
-          <a className="uk-button button-navy-primary uk-button-small" href={this.state.project_url} target="_blank">See the live Version</a>
+          <a className="uk-button button-navy-primary uk-button-small" href={this.state.project_url} target="_blank">Visit the live Version</a>
          </p>
 
       </div>
@@ -103,7 +102,11 @@ import '../styles/Project.css';
               </div>
           </div>
       </div>
-
+      <div className="project-footer">
+        <p>
+         <Link exact to="/portfolio" className="uk-button button-navy-primary uk-button-small" >Back to my portfolio</Link>
+        </p>
+        </div>
        </section>
      )
    }

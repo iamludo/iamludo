@@ -17,14 +17,19 @@
   padding-bottom: 15px;
 }
 
-.project-description .button-navy-primary {
+.project-description .button-navy-primary,
+.project-footer p {
   margin: 0 5px;
+}
+
+.project-footer {
+  padding-top: 20px;
 }
 
 
 
-
 .project-client,
+.project-footer p,
 .project-description > p:last-child {
   text-align: center;
 }
